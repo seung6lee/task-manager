@@ -1,0 +1,239 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: calc(100%);
+    height: 60px;
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+
+#subject {
+    height: 60px;
+    border: none;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    /* background-color: blue; */
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 80vw;
+    height: 100px;
+    border-radius: 10px;
+    background-color: aliceblue;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#addTask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+.info {
+    margin-left: 20px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.date {
+    margin: 0;
+}
+
+.finish {
+    margin-right: 20px;
+
+    width: 50px;
+    height: 50px;
+    background-image: url('/public/doing.png');
+    background-size: cover;
+}
+
+.finish:hover {
+    cursor: pointer;
+    animation: finishIcon 0.5s forwards;
+}
+
+@keyframes finishIcon {
+    0% {
+        background-image: url('/public/doing.png');
+    }
+
+    100% {
+        background-image: url('/public/finish.png');
+    }
+}
+
+#addTaskBox {
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#SubjectBox {
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addInfo {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#box1 {
+    width: 100%;
+    height: 70%;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+#box2 {
+    width: 50%;
+    height: 100%;
+
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:space-around;
+}
+
+#box3 {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:space-around;
+}
+
+#addButtons {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#addConfirm, #subjectConfirm {
+    width: 50px;
+    height: calc(100% - 10px);
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 20px;
+
+    background-color: aqua;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-right: 10px;
+}
+
+#addCancel, #subjectCancel {
+    width: 50px;
+    height: calc(100% - 10px);
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 20px;
+
+    background-color: tomato;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-left: 10px;
+}

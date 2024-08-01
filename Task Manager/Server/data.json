@@ -1,0 +1,36 @@
+{
+    "subjects": {
+        "korean": 3,
+        "math": 1,
+        "society": 4,
+        "science": 3,
+        "english": 2,
+        "history": 5
+    },
+    "tasks": [
+        [
+            "\ud0d0\uad6c \ubcf4\uace0\uc11c \uc791\uc131",
+            "history",
+            "2024-06-07",
+            1
+        ],
+        [
+            "\uad6d\uc5b4 \uc218\ud589",
+            "korean",
+            "2024-06-05",
+            0
+        ],
+        [
+            "\uc218\ud559 \uc218\ud589",
+            "math",
+            "2024-06-12",
+            1
+        ],
+        [
+            "\uc218\ud589 \uc900\ube44",
+            "korean",
+            "2024-06-18",
+            0
+        ]
+    ]
+}
